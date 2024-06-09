@@ -18,7 +18,9 @@ VPN server (ocserv) is an Open Source SSL VPN server.
 
 ## Edit docker-compse.yml & Run
 1- copy `docker-compose.yml` in your Server or clone project
+
 2- Replace the `<IP>` variable in docker-compse.yml with appropriate value.
+
 3- Run `docker-compose up -d`.
 
 
@@ -66,9 +68,8 @@ docker exec ocserv cat /etc/ocserv/data/ocpasswd
 
 
 
-### Not Valid SSL
-
-If you can't create one ( ports 80 and 443 are not available on your server, or you don't have a domain), a fallback script will generate a self-signed certificate for you inside the container. The only difference is a ***warning message about the certificate not being trusted*** when logging in.
+### Not needt to Valid SSL
+ the script will generate a self-signed certificate for you inside the container. so ignore the warning you will get ***warning message about the certificate not being trusted*** when logging in.
 
 
 # References
