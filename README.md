@@ -61,18 +61,13 @@ docker exec ocserv cat /etc/ocserv/data/ocpasswd
 
 - [Android (OpenConnect)](https://apkcombo.com/openconnect/com.github.digitalsoftwaresolutions.openconnect/download/apk)
 - [iOS](https://apps.apple.com/us/app/cisco-anyconnect/id1135064690)
-- [MacOS](https://www.cisco.com/c/en/us/support/docs/smb/routers/cisco-rv-series-small-business-routers/smb5642-install-cisco-anyconnect-secure-mobility-client-on-a-mac-com-rev1.html)
-- [Windows](https://www.cisco.com/c/en/us/support/docs/smb/routers/cisco-rv-series-small-business-routers/smb5686-install-cisco-anyconnect-secure-mobility-client-on-a-windows.html)
-- [Ubuntu](https://www.cisco.com/c/en/us/support/docs/smb/routers/cisco-rv-series-small-business-routers/Kmgmt-785-AnyConnect-Linux-Ubuntu.html)
+- [MacOS](https://its.gmu.edu/wp-content/uploads/anyconnect-macos-4.10.07073-core-vpn-webdeploy-k9.zip)
+- [Windows](https://www.firewall.cx/downloads/cisco-tools-a-applications/cisco-anyconnect-secure-mobility-client-v4-9-0195.html)
+- [Ubuntu](https://www.firewall.cx/downloads/cisco-tools-a-applications/cisco-anyconnect-secure-mobility-client-v4-9-0195.html)
 
 
 
 
-### Not needt to Valid SSL
+### Not need to Valid SSL
  the script will generate a self-signed certificate for you inside the container. so ignore the warning you will get ***warning message about the certificate not being trusted*** when logging in.
 
-
-# References
-
-- [cisco-anyconnect-server-docker](https://github.com/soreana/cisco-anyconnect-server-docker)
-- [TommyLau/docker-ocserv](https://github.com/TommyLau/docker-ocserv)
