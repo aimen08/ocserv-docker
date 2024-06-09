@@ -68,6 +68,6 @@ docker exec ocserv cat /etc/ocserv/data/ocpasswd
 
 
 
-### Not need to Valid SSL
+### No need to a Valid SSL
  the script will generate a self-signed certificate for you inside the container. so ignore the warning you will get ***warning message about the certificate not being trusted*** when logging in.
 
