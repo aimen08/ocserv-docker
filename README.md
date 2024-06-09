@@ -19,7 +19,6 @@ VPN server (ocserv) is an Open Source SSL VPN server.
 ## Edit docker-compse.yml & Run
 1- copy `docker-compose.yml` in your Server or clone project
 2- Replace the `<IP>` variable in docker-compse.yml with appropriate value.
-
 3- Run `docker-compose up -d`.
 
 
