@@ -1,0 +1,14 @@
+version: '3.0'
+services:
+  ocserv:
+    image: rezabeigi/ocserv:latest
+    restart: always
+    container_name: ocserv
+    privileged: true
+    hostname: <IP>
+    ports:
+      - 5443:443/udp
+      - 5443:443
+
+    volumes:
+      - ./data:/etc/ocserv/data
