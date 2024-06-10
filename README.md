@@ -71,7 +71,7 @@ if you having problem with android or ios client , make sure to force connecting
 go inside container and run 
 
 ```
-docker exec ocserv cat /etc/ocserv/data/ocpasswd
+sudo nano /etc/ocserv/ocserv.conf
 ```
 look for this line 
 
