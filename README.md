@@ -66,7 +66,7 @@ docker exec ocserv cat /etc/ocserv/data/ocpasswd
 - [Ubuntu](https://www.firewall.cx/downloads/cisco-tools-a-applications/cisco-anyconnect-secure-mobility-client-v4-9-0195.html)
 
 
-### not connecting in some client
+### Not connecting in some clients
 if you having problem with android or ios client , make sure to force connecting through TLS1.2 only
 go inside container and run 
 
