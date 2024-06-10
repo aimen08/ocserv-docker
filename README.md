@@ -66,7 +66,25 @@ docker exec ocserv cat /etc/ocserv/data/ocpasswd
 - [Ubuntu](https://www.firewall.cx/downloads/cisco-tools-a-applications/cisco-anyconnect-secure-mobility-client-v4-9-0195.html)
 
 
+### not connecting in some client
+if you having problem with android or ios client , make sure to force connecting through TLS1.2 only
+go inside container and run 
 
+```
+docker exec ocserv cat /etc/ocserv/data/ocpasswd
+```
+look for this line 
+
+```
+tls-priorities = "NORMAL:%SERVER_PRECEDENCE:%COMPAT:-RSA:-VERS-SSL3.0:-ARCFOUR-128"
+```
+add this to it -VERS-TLS1.3 so it becomes
+
+```
+tls-priorities = "NORMAL:%SERVER_PRECEDENCE:%COMPAT:-RSA:-VERS-SSL3.0:-ARCFOUR-128:-VERS-TLS1.3"
+
+```
+done , restart now it should fallback to tls1.2 for every connection
 
 ### No need to a Valid SSL
  the script will generate a self-signed certificate for you inside the container. so ignore the warning you will get ***warning message about the certificate not being trusted*** when logging in.
