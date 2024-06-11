@@ -89,3 +89,9 @@ done , restart now it should fallback to tls1.2 for every connection
 ### No need to a Valid SSL
  the script will generate a self-signed certificate for you inside the container. so ignore the warning you will get ***warning message about the certificate not being trusted*** when logging in.
 
+
+ # References
+- [beigi-reza-docker-compose](https://github.com/beigi-reza/docker-compose-ocserv)
+- [cisco-anyconnect-server-docker](https://github.com/soreana/cisco-anyconnect-server-docker)
+- [TommyLau/docker-ocserv](https://github.com/TommyLau/docker-ocserv)
+
